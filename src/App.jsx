@@ -2,13 +2,13 @@ import "./App.css";
 // import AboutUs from "./component/AboutUs";
 import Blog from "./component/Blog";
 import Choose from "./component/Choose";
-// import Footer from "./component/Footer";
+import Footer from "./component/Footer";
 import Header from "./component/Header";
 import IamgeScale from "./component/IamgeScale";
 import Marqee from "./component/Marqee";
 import Navbar from "./component/Navbar";
 import Offer from "./component/Offer";
-// import Services from "./component/Services";
+import Services from "./component/Services";
 
 function App() {
   return (
@@ -19,11 +19,11 @@ function App() {
     <Marqee/>
     <Choose/>
     <Offer/>
+    <Services/>
     <IamgeScale/>
-    <Blog/>
+    {/* <Blog/> */}
     {/* <AboutUs/> */}
-    {/* <Services/> */}
-    {/* <Footer/> */}
+    <Footer/>
     </div>
   
     </>

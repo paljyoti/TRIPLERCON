@@ -21,6 +21,8 @@ function Blog() {
             enhance productivity, and drive growth.
           </p>
         </div>
+
+        <div className="heads"></div>
       </div>
       <button class="bg-black ml-52 text-white px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-[#39FF14] hover:text-black">
         View More
