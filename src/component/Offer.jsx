@@ -18,14 +18,14 @@ function Offer() {
         </p>
       </div>
       <div className="img bg-white p-4">
-  <div className="img1 flex gap-6  ml-10">
+  {/* <div className="img1 flex gap-6  ml-10">
     <img src={image1} alt="" className="w-1/2 h-96 hover:scale-105 transition-transform duration-300" />
     <img src={image2} alt="" className="w-1/2 h-88 hover:scale-105 transition-transform duration-300" />
   </div>
   <div className="img2 flex gap-6 mt-6 ml-10">
     <img src={image3} alt="" className="w-1/2 h-96 hover:scale-105 transition-transform duration-300" />
     <img src={image4} alt="" className="w-1/2 h-88 hover:scale-105 transition-transform duration-300" />
-  </div>
+  </div> */}
 </div>
 
     </div>

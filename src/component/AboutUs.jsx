@@ -1,30 +1,36 @@
-// import React from "react";
-// import image1 from "../../"
+import React from "react";
 
-// function AboutUs() {
-//   return (
-//     <div>
-//       AboutUs
-//       <div className="head">
-//         <h4>Who are we</h4>
-//         <h1>a new digital work system for you.</h1>
-//         <h4>
-//           Netcare Consulting: Your One-Stop Shop for Digital Marketing Success.
-//         </h4>
-//         <p>
-//           Netcare Consulting: We elevate brands through data-driven digital
-//           marketing. Our passionate consultants and in-house specialists, guided
-//           by the OCMX methodology, deliver comprehensive SEO, social media,
-//           influencer, and paid advertising solutions to achieve your target
-//           audience and fuel business growth.
-//         </p>
-//         <p>2022: Your Digital Marketing</p>
-//       </div>
-//       <div className="img">
-//         <img src={image1} alt="" />
-//       </div>
-//     </div>
-//   );
-// }
+function AboutUs() {
+  return (
+    <div className="p-8">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold text-[#39FF14]">What We Do</h1>
+        <p className="text-black mt-4 max-w-2xl mx-auto text-lg">
+          As a website designer, we provide affordable website design services to
+          our clients all over the world with the best services. Our services
+          include small business website design services.
+        </p>
+      </div>
 
-// export default AboutUs;
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Card 1 */}
+        <div className="bg-black p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl">
+          <h3 className="text-2xl font-bold text-[#39FF14] mb-2">Custom Web Design</h3>
+          <p className="text-white">
+            We create custom websites tailored to your business needs, ensuring a unique online presence.
+          </p>
+        </div>
+
+        {/* Card 2 */}
+        <div className="bg-black p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl">
+          <h3 className="text-2xl font-bold text-[#39FF14] mb-2">E-commerce Solutions</h3>
+          <p className="text-white">
+            Our e-commerce solutions are designed to help you sell products online efficiently and effectively.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default AboutUs;

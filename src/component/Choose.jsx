@@ -23,7 +23,7 @@ function Choose() {
           <h2 className="text-3xl font-semibold mb-4 text-left">
             The Ultimate Platform for DIGITAL SUCCESS.
           </h2>
-          <ul className="list-disc pl-5 space-y-2 text-left">
+          <ul className="list-disc pl-5 space-y-2 text-left text-justify w-5/6">
             <li>
               Expert Team: Our seasoned professionals bring years of experience
               and industry insights and simplify the entire process.
@@ -51,7 +51,7 @@ function Choose() {
           <h2 className="text-3xl font-semibold mb-4 text-left">
             A New Digital Work System for You.
           </h2>
-          <ul className="list-disc pl-5 space-y-2 text-left">
+          <ul className="list-disc pl-5 space-y-2 text-left text-justify">
             <li>
               Triple R Consulting: Your One-Stop Shop for Digital Marketing
               Success.
@@ -74,7 +74,7 @@ function Choose() {
           <img
             src={image2}
             alt=""
-            className=" ml-8 w-5/6 h-96 hover:scale-105 transition-transform duration-300 cursor-pointer"
+            className=" ml-16 w-5/6 h-96 hover:scale-105 transition-transform duration-300 cursor-pointer"
           />
         </div>
       </div>

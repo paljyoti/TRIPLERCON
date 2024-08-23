@@ -19,11 +19,11 @@ function App() {
     <Header/>
     <Marqee/>
     <Choose/>
+    <AboutUs/>
     <Offer/>
-    <Services/>
+    {/* <Services/> */}
     <IamgeScale/>
-    {/* <Blog/> */}
-    {/* <AboutUs/> */}
+    <Blog/>
     <Footer/>
     </div>
   
