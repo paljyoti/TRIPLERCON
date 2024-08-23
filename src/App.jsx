@@ -9,12 +9,13 @@ import Marqee from "./component/Marqee";
 import Navbar from "./component/Navbar";
 import Offer from "./component/Offer";
 import Services from "./component/Services";
+import AboutUs from "./component/AboutUs"
 
 function App() {
   return (
     <>
     <div className="app">
-    <Navbar/>
+    {/* <Navbar/> */}
     <Header/>
     <Marqee/>
     <Choose/>
