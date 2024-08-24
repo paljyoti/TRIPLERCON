@@ -20,10 +20,10 @@ function App() {
     <AboutUs/>
     <Marqee/>
     <Choose/>
+    <Services/>
     <IamgeScale/>
     <Blog/>
     <Offer/>
-    {/* <Services/> */}
     <Footer/>
     </div>
   

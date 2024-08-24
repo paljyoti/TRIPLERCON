@@ -19,7 +19,7 @@ function Aboutus() {
             Vision & Mission
           </h1>
           <h2 className="text-2xl lg:text-3xl font-semibold text-black">
-            ELEVATING Your Space With Style and Function
+            ELEVATING Your Online Presence with Style and Function
           </h2>
           <p className="text-sm lg:text-base text-black text-justify">
             To be the leading digital marketing agency that empowers businesses
@@ -41,7 +41,7 @@ function Aboutus() {
             create powerful marketing campaigns.
           </p>
           <button class="bg-black mt-10 mr-96 text-white px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-[#39FF14] hover:text-black">
-            Learn AboutUs
+            Learn Aboutus
           </button>
         </div>
       </div>
