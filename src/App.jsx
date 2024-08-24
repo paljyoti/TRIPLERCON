@@ -17,13 +17,13 @@ function App() {
     <div className="app">
     {/* <Navbar/> */}
     <Header/>
+    <AboutUs/>
     <Marqee/>
     <Choose/>
-    <AboutUs/>
-    <Offer/>
-    {/* <Services/> */}
     <IamgeScale/>
     <Blog/>
+    <Offer/>
+    {/* <Services/> */}
     <Footer/>
     </div>
   

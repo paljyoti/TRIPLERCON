@@ -8,7 +8,7 @@ function Offer() {
   return (
     <div>
       <div className="heading bg-white text-center text-black p-6 mt-4">
-        <h1 className="text-4xl font-bold mb-4" style={{color:"#39FF14"}}>
+        <h1 className="text-4xl font-bold mb-4 text-[#39FF14]" >
           How Do Marketers Use Triple R Consulting?
         </h1>
         <p className="text-lg pl-72 w-3/4">

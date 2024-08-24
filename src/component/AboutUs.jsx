@@ -1,36 +1,52 @@
 import React from "react";
+import image from "../../src/assets/digital-marketing-with-icons-business-people.jpg";
 
-function AboutUs() {
+function Aboutus() {
   return (
-    <div className="p-8">
-      <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-[#39FF14]">What We Do</h1>
-        <p className="text-black mt-4 max-w-2xl mx-auto text-lg">
-          As a website designer, we provide affordable website design services to
-          our clients all over the world with the best services. Our services
-          include small business website design services.
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Card 1 */}
-        <div className="bg-black p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl">
-          <h3 className="text-2xl font-bold text-[#39FF14] mb-2">Custom Web Design</h3>
-          <p className="text-white">
-            We create custom websites tailored to your business needs, ensuring a unique online presence.
-          </p>
+    <div className="relative w-full min-h-screen p-4 bg-white">
+      <div className="flex flex-col lg:flex-row justify-evenly">
+        <div className="w-full lg:w-96 mb-4 lg:mb-0 perspective-1000">
+          <div className="relative group">
+            <img
+              src={image}
+              alt="Room"
+              className="w-full h-96  mt-24 transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-3d"
+            />
+          </div>
         </div>
-
-        {/* Card 2 */}
-        <div className="bg-black p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl">
-          <h3 className="text-2xl font-bold text-[#39FF14] mb-2">E-commerce Solutions</h3>
-          <p className="text-white">
-            Our e-commerce solutions are designed to help you sell products online efficiently and effectively.
+        <div className="text-white w-full lg:w-1/2 flex flex-col space-y-4">
+          <h1 className="text-xl lg:text-5xl font-bold text-[#39FF14] mt-8">
+            Vision & Mission
+          </h1>
+          <h2 className="text-2xl lg:text-3xl font-semibold text-black">
+            ELEVATING Your Space With Style and Function
+          </h2>
+          <p className="text-sm lg:text-base text-black text-justify">
+            To be the leading digital marketing agency that empowers businesses
+            of all sizes to reach their full potential in the digital landscape.
+            We envision a world where every brand can connect with its audience
+            in a meaningful way, leveraging the power of innovative technology,
+            data-driven strategies, and creative storytelling to drive
+            sustainable growth and lasting impact.
           </p>
+          <p className="text-sm lg:text-base text-black text-justify">
+            "Our mission is to deliver tailored digital marketing solutions that
+            drive measurable results for our clients. We strive to: Innovate by
+            staying ahead of industry trends and adopting the latest
+            technologies.Empower businesses by providing them with the tools and
+            strategies they need to thrive online. Build strong, long-lasting
+            relationships with our clients by understanding their unique needs
+            and delivering exceptional service.Foster a collaborative and
+            inclusive environment where creativity and data come together to
+            create powerful marketing campaigns.
+          </p>
+          <button class="bg-black mt-10 mr-96 text-white px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-[#39FF14] hover:text-black">
+            Learn AboutUs
+          </button>
         </div>
       </div>
     </div>
   );
 }
 
-export default AboutUs;
+export default Aboutus;

@@ -1,6 +1,6 @@
 import React from "react";
-import image1 from "../../src/assets/pexels-flodahm-699459.jpg";
-import image2 from "../../src/assets/pexels-fauxels-3184291.jpg";
+import image1 from "../../src/assets/corporate-management-strategy-solution-branding-concept.jpg";
+import image2 from "../../src/assets/marketing-advertising-commercial-strategy-concept.jpg";
 
 function Choose() {
   return (
@@ -10,13 +10,13 @@ function Choose() {
           <img
             src={image1}
             alt=""
-            className=" ml-8 w-5/6 h-96 hover:scale-105 transition-transform duration-300 cursor-pointer"
+            className=" ml-16 w-4/5 h-96 hover:scale-105 transition-transform duration-300 cursor-pointer"
           />
         </div>
         <div className="heading w-1/2 text-black pl-6">
           <h1
-            className="text-5xl font-bold mb-4 text-left "
-            style={{ color: "#39FF14" }}
+            className="text-5xl font-bold mb-4 text-left text-[#39FF14] "
+            
           >
             Why Choose Us
           </h1>
@@ -43,8 +43,8 @@ function Choose() {
       <div className="img-and-heading flex bg-white p-6 items-center">
         <div className="heading w-1/2 text-black pl-20">
           <h1
-            className="text-5xl font-bold mb-4 text-left "
-            style={{ color: "#39FF14" }}
+            className="text-5xl font-bold mb-4 text-left text-[#39FF14]"
+            
           >
             Who are we
           </h1>
