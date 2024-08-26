@@ -44,32 +44,69 @@
 
 // export default DigitalMarketingServices;
 
-import React from "react";
+// import React from "react";
 
-function View() {
+// function View() {
+//   return (
+//     <div className="bg-white p-4 sm:p-8 lg:p-12">
+//       <div className="text-center sm:text-left text-white mb-8 px-4 sm:px-20">
+//         <h6 className="text-xl sm:text-5xl text-[#39FF14] font-bold mb-2">
+//           How We Work
+//         </h6>
+//         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black">
+//           Custom Design Solutions
+//         </h1>
+//       </div>
+//       <div className="text-center pl-20 sm:text-left text-white flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-4 sm:gap-8">
+//         <p className="text-base text-black sm:text-lg leading-relaxed w-full sm:w-1/2 px-4 sm:px-0">
+//           We approach every design as tailor-made and unique to our customer's
+//           taste and lifestyle. Collaborating this understanding with our
+//           expertise in custom quality craftsmanship forms the foundation for
+//           success.
+//         </p>
+//         <button class="bg-black mt-10 mr-96 text-white px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-[#39FF14] hover:text-black">
+//           View Process
+//         </button>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default View;
+
+
+
+import React, { useState } from 'react';
+
+const DigitalMarketingService = () => {
+  const [showText, setShowText] = useState(false);
+
+  const handleClick = () => {
+    setShowText(!showText);
+  };
+
   return (
-    <div className="bg-white p-4 sm:p-8 lg:p-12">
-      <div className="text-center sm:text-left text-white mb-8 px-4 sm:px-20">
-        <h6 className="text-xl sm:text-5xl text-[#39FF14] font-bold mb-2">
-          How We Work
-        </h6>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black">
-          Custom Design Solutions
-        </h1>
-      </div>
-      <div className="text-center pl-20 sm:text-left text-white flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-4 sm:gap-8">
-        <p className="text-base text-black sm:text-lg leading-relaxed w-full sm:w-1/2 px-4 sm:px-0">
-          We approach every design as tailor-made and unique to our customer's
-          taste and lifestyle. Collaborating this understanding with our
-          expertise in custom quality craftsmanship forms the foundation for
-          success.
-        </p>
-        <button class="bg-black mt-10 mr-96 text-white px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-[#39FF14] hover:text-black">
-          View Process
-        </button>
-      </div>
+    <div className="min-h-screen bg-white text-white flex flex-col items-center py-12">
+      <h1 className="text-4xl font-bold mb-8 text-[#39FF14]">Digital Marketing Services</h1>
+      <button 
+        onClick={handleClick} 
+        className="bg-black text-white py-2 px-4 rounded hover:text-black hover:bg-[#39FF14] transition duration-300"
+      >
+        {showText ? 'Hide Details' : 'Show Details'}
+      </button>
+      {showText && (
+        <div className="mt-8 text-center">
+          <h2 className="text-2xl font-semibold mb-4 text-black">Our Services</h2>
+          <p className="mb-4 text-black">
+            We offer a wide range of digital marketing services including SEO, SEM, Content Marketing, Social Media Management, and more.
+          </p>
+          <p className='text-black'>
+            Our expert team is here to help you grow your online presence and achieve your marketing goals.
+          </p>
+        </div>
+      )}
     </div>
   );
-}
+};
 
-export default View;
+export default DigitalMarketingService;

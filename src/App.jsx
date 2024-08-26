@@ -10,18 +10,20 @@ import Navbar from "./component/Navbar";
 import Offer from "./component/Offer";
 import Services from "./component/Services";
 import AboutUs from "./component/AboutUs"
+import Vision from "./component/Vision";
 
 function App() {
   return (
     <>
     <div className="app">
-    {/* <Navbar/> */}
+    <Navbar/>
     <Header/>
     <AboutUs/>
+    {/* <Services/> */}
     <Marqee/>
     <Choose/>
-    <Services/>
     <IamgeScale/>
+    <Vision/>
     <Blog/>
     <Offer/>
     <Footer/>
