@@ -25,21 +25,25 @@ const ContactPage = () => {
 
       <div className="min-h-screen bg-white text-black p-6 flex flex-col lg:flex-row">
         {/* Address Section */}
-        <div className="lg:w-1/2 p-6 flex flex-col justify-center">
+        <div className="lg:w-1/2 pl-12 flex flex-col justify-center">
           <p className="text-xl font-semibold mb-4">
             If you would like to work with us or just want to get in touch, we’d
             love to hear from you!
           </p>
           <div className="text-lg font-medium mb-2">
-            Address: Saraswati Vihar
+            Address: Saraswati Vihar Chakarpura,
+            <p className="pl-20"> Gurugram,Haryana,Indian</p>
           </div>
+          {/* <div className="text-lg font-medium mb-2">
+              Gurugram,Haryana,Indian
+          </div> */}
           <div className="text-lg font-medium">
             Email:{" "}
             <a
-              href="mailto:jyoti@gmail.com"
+              href="mailto:rishabhbahree@gamil.com"
               className="text-green-500 hover:text-green-300"
             >
-              jyoti@gmail.com
+              rishabhbahree@gamil.com
             </a>
           </div>
         </div>

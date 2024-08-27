@@ -1,8 +1,11 @@
 import React from "react";
 import backgroundVideo from "../../src/assets/3141207-uhd_3840_2160_25fps.mp4";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+const navigate = useNavigate();
+
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background Video */}
@@ -53,7 +56,7 @@ function Header() {
         </motion.h5>
 
         {/* Learn More Button */}
-        <button className="bg-black mt-5 text-white px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-[#39FF14] hover:text-black">
+        <button onClick={()=>navigate('/aboutus')} className="bg-black mt-5 text-white px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-[#39FF14] hover:text-black">
           Learn More
         </button>
       </div>

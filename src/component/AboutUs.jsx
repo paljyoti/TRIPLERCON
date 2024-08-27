@@ -2,8 +2,10 @@ import React from "react";
 // import image from "../../src/assets/digital-marketing-with-icons-business-people.jpg";
 import image from "../../src/assets/marketing-computer-sign-symbol-concept.jpg";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 function Aboutus() {
+  const navigate = useNavigate();
   return (
     <div className="relative w-full min-h-screen p-4 bg-white">
       <div className="flex flex-col lg:flex-row justify-evenly">
@@ -63,9 +65,9 @@ function Aboutus() {
             business to new heights. Let’s work together to achieve your digital
             marketing goals and take your business to new heights.
           </motion.p>
-          {/* <button class="bg-black mt-10 mr-96 text-white px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-[#39FF14] hover:text-black">
-            Learn Aboutus
-          </button> */}
+          <button onClick={()=>navigate('/aboutus')} class="bg-black mt-10 mr-96 text-white px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-[#39FF14] hover:text-black">
+            Learn AboutUs
+          </button>
         </div>
         
       </div>

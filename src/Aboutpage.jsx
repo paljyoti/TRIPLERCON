@@ -35,7 +35,7 @@ function Aboutpage() {
           we welcome any challenge with our arms wide open.
         </p>
       </div>
-      <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-4 text-[#39FF14] px-4 md:px-8 lg:px-16 xl:px-32">
+      <h2 className="text-xl md:text-2xl lg:text-4xl font-bold mb-4 text-[#39FF14] px-4 md:px-8 lg:px-16 xl:px-32">
         Our Vision
       </h2>
       <div className="flex flex-col md:flex-row text-justify gap-6 md:gap-12 xl:gap-16 px-4 md:px-8 lg:px-16 xl:px-32">
