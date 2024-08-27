@@ -2,6 +2,7 @@ import React from "react";
 import image1 from "../../src/assets/corporate-management-strategy-solution-branding-concept.jpg";
 import image2 from "../../src/assets/marketing-advertising-commercial-strategy-concept.jpg";
 
+
 function Choose() {
   return (
     <div>
@@ -19,7 +20,7 @@ function Choose() {
             
           >
             Why Choose Us
-          </h1>
+          </h1> 
           <h2 className="text-3xl font-semibold mb-4 text-left">
             The Ultimate Platform for DIGITAL SUCCESS.
           </h2>

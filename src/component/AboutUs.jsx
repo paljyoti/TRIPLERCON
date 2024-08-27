@@ -9,20 +9,10 @@ function Aboutus() {
       <div className="flex flex-col lg:flex-row justify-evenly">
         <div className="w-full lg:w-96 mb-4 lg:mb-0 perspective-1000">
           <div className="relative group">
-            <motion.img
-            initial={{X:-100,opacity:0}}
-            animate={{x:0,opacity:1}}
-            viewport={{once:true}}
-            transition={{
-              delay:0.2,
-              x:{type:"spring" ,stiffness:60},
-              opacity:{duration:1},
-              ease:"easeIn",
-              duration:1
-            }}
+            <img
               src={image}
               alt="Room"
-              className="w-full h-96  mt-32 transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-3d"
+              className="w-full h-96   mt-32 transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-3d"
             />
           </div>
         </div>
@@ -31,18 +21,25 @@ function Aboutus() {
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 6 }}
+            
             className="text-xl lg:text-5xl font-bold text-[#39FF14] mt-8"
           >
             ABOUT US
           </motion.h1>
-          <motion.h2 initial={{ opacity: 0, y: 200 }}
+          <motion.h2
+            initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 6 }} className="text-2xl lg:text-3xl font-semibold text-black ">
+            transition={{ duration: 6 }}
+            className="text-2xl lg:text-3xl font-semibold text-black "
+          >
             ELEVATING Your Online Presence with Style and Function
           </motion.h2>
-          <motion.p   initial={{ opacity: 0, y: 200 }}
+          <motion.p
+            initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 6 }}className="text-sm lg:text-base text-black text-justify">
+            transition={{ duration: 6 }}
+            className="text-sm lg:text-base text-black text-justify"
+          >
             To be the leading digital marketing agency that empowers businesses
             We offer a comprehensive suite of digital marketing services
             designed to meet the diverse needs of our clients. From search
@@ -53,9 +50,12 @@ function Aboutus() {
             investment in digital marketing translates into tangible business
             growth.
           </motion.p>
-          <motion.p  initial={{ opacity: 0, y: 200 }}
+          <motion.p
+            initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 6 }} className="text-sm lg:text-base text-black text-justify">
+            transition={{ duration: 6 }}
+            className="text-sm lg:text-base text-black text-justify"
+          >
             Whether you’re looking to increase brand awareness, drive more
             traffic to your website, or convert leads into customers, [Your
             Company Name] is here to guide you every step of the way. Let’s work
@@ -67,6 +67,7 @@ function Aboutus() {
             Learn Aboutus
           </button> */}
         </div>
+        
       </div>
     </div>
   );

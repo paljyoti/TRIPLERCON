@@ -38,7 +38,7 @@ function Navbar() {
               HOME
             </a>
             <a
-              href="#"
+              href="/#/aboutus"
               className="text-white hover:text-[#39FF14] transition duration-300"
             >
               ABOUT US
@@ -50,13 +50,13 @@ function Navbar() {
               SERVICES
             </a>
             <a
-              href="#"
+              href="/#/blog"
               className="text-white hover:text-[#39FF14] transition duration-300"
             >
               BLOG
             </a>
             <a
-              href="#"
+              href="/#/contact"
               className="text-white hover:text-[#39FF14] transition duration-300"
             >
               CONTACT US 
