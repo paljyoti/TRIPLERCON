@@ -1,11 +1,13 @@
 import React from "react";
 // import image from "../../src/assets/digital-marketing-with-icons-business-people.jpg";
 import image from "../../src/assets/marketing-computer-sign-symbol-concept.jpg";
-import { motion } from "framer-motion";
+import { motion, stagger, useScroll } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 function Aboutus() {
   const navigate = useNavigate();
+  const { scrollYProgress } = useScroll();
+
   return (
     <div className="relative w-full min-h-screen p-4 bg-white">
       <div className="flex flex-col lg:flex-row justify-evenly">
@@ -20,10 +22,17 @@ function Aboutus() {
         </div>
         <div className="text-white w-full lg:w-1/2 flex flex-col space-y-7">
           <motion.h1
-            initial={{ opacity: 0, y: 200 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 6 }}
-            
+            variants={{
+              hidden: { opacity: 0 },
+              show: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.25,
+                },
+              },
+            }}
+            initial="hidden"
+            animate="show"
             className="text-xl lg:text-5xl font-bold text-[#39FF14] mt-8"
           >
             ABOUT US
@@ -65,11 +74,13 @@ function Aboutus() {
             business to new heights. Let’s work together to achieve your digital
             marketing goals and take your business to new heights.
           </motion.p>
-          <button onClick={()=>navigate('/aboutus')} class="bg-black mt-10 mr-96 text-white px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-[#39FF14] hover:text-black">
+          <button
+            onClick={() => navigate("/aboutus")}
+            class="bg-black mt-10 mr-96 text-white px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-[#39FF14] hover:text-black"
+          >
             Learn AboutUs
           </button>
         </div>
-        
       </div>
     </div>
   );

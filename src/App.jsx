@@ -18,9 +18,9 @@ function App() {
     <div className="app">
     <Navbar/>
     <Header/>
+    <Marqee/>
     <AboutUs/>
     {/* <Services/> */}
-    <Marqee/>
     <Choose/>
     <IamgeScale/>
     <Vision/>
